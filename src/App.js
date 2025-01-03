@@ -34,9 +34,9 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
       <div className="container">
-        <h2>BMI CACULATOR</h2>
+        <h2 className="center">BMI CACULATOR</h2>
         <form onSubmit={calculatebmi}>
           <div>
             <label>Weight(kg)</label>
@@ -58,12 +58,12 @@ function App() {
           </div>
 
           <div>
-            <button>Submit</button>
-            <button type="submit" onClick={reload}>
+            <button className="btn">Submit</button>
+            <button className="btn btn-outline" type="submit" onClick={reload}>
               Reload
             </button>
           </div>
-          <div>
+          <div className="center">
             <h2>Your BMI :{bmi}</h2>
             <p>{message}</p>
           </div>
